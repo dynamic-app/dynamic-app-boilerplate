@@ -1,0 +1,38 @@
+{
+  "name": "dynamic-app-boilerplate",
+  "version": "0.5.0",
+  "description": "Example of 'DynamicApp' implementation.",
+  "author": "Aron Stein",
+  "license": "MIT",
+  "homepage": "https://github.com/dynamic-app/dynamic-app-boilerplate",
+  "bugs": "https://github.com/dynamic-app/dynamic-app-boilerplate/issues",
+  "keywords": [
+    "dynamic-app-boilerplate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dynamic-app/dynamic-app-boilerplate.git"
+  },
+  "scripts": {
+    "app": "webpack --watch --mode=development",
+    "server": "node server.js",
+    "start": "npm run app & npm run server",
+    "build": "yarn install && webpack --mode=production"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "dynamic-app-core": "^0.5.1",
+    "dynamic-app-templater": "1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/preset-react": "7.0.0",
+    "autoprefixer": "^9.5.1",
+    "babel-loader": "8.0.6",
+    "css-loader": "^2.1.1",
+    "mini-css-extract-plugin": "^0.7.0",
+    "postcss-loader": "^3.0.0",
+    "webpack": "4.10.2",
+    "webpack-cli": "3.3.2"
+  }
+}
