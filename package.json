@@ -20,7 +20,7 @@
     "build": "yarn install && webpack --mode=production"
   },
   "dependencies": {
-    "express": "4.17.1",
+    "express": "4.19.2",
     "dynamic-app-core": "^0.5.1",
     "dynamic-app-templater": "1.0.0"
   },
